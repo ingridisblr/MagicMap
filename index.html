@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicMap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2c3e50">
+</head>
+<body>
+
+    <div id="splash-screen" class="screen active">
+        <div class="splash-content">
+            <h1>MagicMap</h1>
+            <p>Seu guia de rotas para seus sonhos se tornarem realidade!</p>
+            <div><button id="start-btn" onclick="Iniciar()">Iniciar</button></div>
+        </div>
+    </div>
+
+    <div id="home-screen" class="screen">
+        <button class="back-btn" onclick="goSplash()"><</button>
+        
+        <h2>Escolha seu Destino</h2>
+        <div class="park-buttons">
+            <button onclick="openPark('Magic Kingdom', 'assets/magic-kingdom.jpg', 28.417663, -81.581212)">🏰 Magic Kingdom</button>
+            <button onclick="openPark('Epcot', 'assets/epcot.jpg', 28.374716, -81.549353)">🌐 Epcot</button>
+            <button onclick="openPark('Hollywood Studios', 'assets/hollywood-studios.jpg', 28.357529, -81.558239)">🎬 Hollywood Studios</button>
+            <button onclick="openPark('Animal Kingdom', 'assets/animal-kingdom.jpg', 28.359732, -81.591323)">🦁 Animal Kingdom</button>
+        </div>
+    </div>
+
+    <div id="park-screen" class="screen">
+        <button class="back-btn" onclick="goHome()"><</button>
+        <h2 id="park-title">Nome do Parque</h2>
+        <img id="park-image" src="" alt="Imagem do Parque">
+        
+        <div class="actions">
+            <p id="status-msg">Pronto para traçar a rota!</p>
+            <button id="route-btn" class="map-btn">Ver rota no Google Maps</button>
+        </div>
+        
+    </div>
+
+    </div>
+
+    <footer class="fixed-author">Por Ingrid Rosendo</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

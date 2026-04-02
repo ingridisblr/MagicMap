@@ -1,0 +1,21 @@
+{
+  "name": "MagicMap por Ingrid Rosendo",
+  "short_name": "MagicMap",
+  "description": "App para encontrar rotas para os parques da Disney.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#2c3e50",
+  "theme_color": "#3498db",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
