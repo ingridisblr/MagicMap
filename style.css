@@ -6,7 +6,7 @@
 }
 
 body {
-    /* Gradiente com as 3 cores solicitadas */
+
     background: linear-gradient(180deg, #152154 0%, #ff46e6 50%, #fdbb2d 100%);
     background-attachment: fixed;
     background-size: cover;
@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
 }
 
-/* 2. Estrelas Dinâmicas sobre o gradiente */
+
 body::before {
     content: "";
     position: fixed;
@@ -48,7 +48,7 @@ body::before {
     display: flex;
 }
 
-/* Tela 1: Splash com Imagem de Fundo */
+
 #splash-screen {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url('imageapp.jpg') no-repeat center center;
@@ -82,21 +82,21 @@ body::before {
 
 .fixed-author {
     position: fixed;
-    bottom: 20px; /* Distância do fundo da tela */
+    bottom: 20px; 
     left: 0;
     width: 100%;
     text-align: center;
     font-size: 0.9rem;
-    color: white; /* Cor padrão */
+    color: white; 
     opacity: 0.8;
-    z-index: 100; /* Garante que fique acima de tudo */
-    pointer-events: none; /* Evita que o texto atrapalhe cliques em botões próximos */
+    z-index: 100; 
+    pointer-events: none; 
 }
 
-/* Ajuste de cor para telas claras (Home e Parque) */
+
 #home-screen.active ~ .fixed-author,
 #park-screen.active ~ .fixed-author {
-    color: #3f3f3f; /* Cor escura para contrastar com o fundo cinza/azul claro */
+    color: #3f3f3f; 
 }
 
 /* Tela 2: Home */
